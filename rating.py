@@ -31,7 +31,7 @@ def parseSeason(relLink):
     response = br.open('http://www.imdb.com'+ relLink)
     soupSeason = BeautifulSoup(response.read())
     noOfEpisodes = soupSeason.findAll('meta',{'itemprop':'numberofEpisodes'})[0]
-    print 'No of Episodes :' + noOfEpisodes['content']
+    print '\nSeason\nNo of Episodes :' + noOfEpisodes['content']
     episodes = soupSeason.findAll('a',{'itemprop':'name'})
     for epi in episodes:
        print '\t Title: '+ epi['title']
@@ -61,4 +61,4 @@ printRating(soupmain)
 seasons = soupmain.findAll('a',{'href':re.compile(r"season")})
 for season in  seasons:
    parseSeason(season['href'])
-                                                                                                                                                      
+                                                                                                                      
