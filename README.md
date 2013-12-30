@@ -3,17 +3,18 @@ rating
 
 Find rating of a movie from imdb. if the search item is series list all episodes alon with the rating
 
-eg.
-1. Search for a Film. 
-
-# python rating.py pirates of the
+example..
+#### Search for a Film. 
+```shell
+$ python rating.py pirates of the
 Name : Pirates of the Caribbean: At World's End
 Genre: Action
         Rating:  7.0
+```
 
-
-2. Search for a series
-# python rating.py the it crowd
+#### Search for a series
+```shell
+$ python rating.py the it crowd
 Name : The IT Crowd
 Genre: Comedy
         Rating:  8.5
@@ -40,4 +41,7 @@ No of Episodes :6
         Title: Are We Not Men?
         Rating:  8.0
         Title: Tramps Like Us
-        ...............................
+        .
+        .
+        .
+```
